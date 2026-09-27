@@ -1,7 +1,6 @@
 aid: barnana
 name: Barnana
-description: 'Barnana is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Barnana is a snack food company that creates plant‑based, organic banana, plantain, and cassava chips and bites. Founded with a mission to reduce food waste, the brand sources imperfect bananas and turns them into tasty, sustainably‑packaged snacks. Their product line includes organic plantain chips, cassava chips, banana bites, and seasonal flavors, sold online and in retail stores across the United States.'
 url: https://raw.githubusercontent.com/api-evangelist/barnana/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
@@ -11,7 +10,11 @@ specificationVersion: '0.20'
 created: '2026-09-27'
 modified: '2026-09-27'
 tags:
-- Company
+- SnackFood
+- Sustainable
+- Organic
+- PlantBased
+- Retail
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +22,7 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/barnana-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/barnana
+  url: https://barnana.com
