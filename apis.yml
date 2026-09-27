@@ -1,11 +1,14 @@
 aid: barnana
 name: Barnana
-description: 'Barnana is a snack food company that creates plant‑based, organic banana, plantain, and cassava chips and bites. Founded with a mission to reduce food waste, the brand sources imperfect bananas and turns them into tasty, sustainably‑packaged snacks. Their product line includes organic plantain chips, cassava chips, banana bites, and seasonal flavors, sold online and in retail stores across the United States.'
+image: http://barnana.com/cdn/shop/files/WEB-barnana---regenerative-pink-salt-Upscaled_eb511714-ef7a-4cda-9f41-94bc5da5dddb.jpg?v=1769208583
+description: Barnana is a snack food company that creates plant‑based, organic banana, plantain, and cassava chips and bites. Founded with a mission
+  to reduce food waste, the brand sources imperfect bananas and turns them into tasty, sustainably‑packaged snacks. Their product line includes
+  organic plantain chips, cassava chips, banana bites, and seasonal flavors, sold online and in retail stores across the United States.
 url: https://raw.githubusercontent.com/api-evangelist/barnana/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-27 (modular-v1; was harvest)
 specificationVersion: '0.20'
 created: '2026-09-27'
 modified: '2026-09-27'
@@ -15,14 +18,39 @@ tags:
 - Organic
 - PlantBased
 - Retail
-apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: LLMsTxt
+  url: llms/barnana-llms.txt
+- type: WellKnown
+  url: well-known/barnana-well-known.yml
+- type: Hosts
+  url: hosts/barnana-hosts.yml
+- type: Vendors
+  url: vendors/barnana-vendors.yml
+- type: PrivacyPolicy
+  url: https://barnana.com/policies/privacy-policy
+- type: Newsroom
+  url: https://barnana.com/blogs/press
+- type: Blog
+  url: https://barnana.com/blogs/blog
 - type: DomainSecurity
   url: security/barnana-domain-security.yml
 - type: Website
   url: https://barnana.com
+apis:
+- name: Barnana GraphQL API
+  description: GraphQL API for Barnana offering product and order data.
+  humanURL: https://barnana.com/api/graphql
+  baseURL: https://barnana.com/api
+  aid: barnana:barnana-graphql-api
+x-enrichment:
+  date: '2026-09-27'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
